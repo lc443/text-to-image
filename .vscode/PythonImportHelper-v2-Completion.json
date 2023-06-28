@@ -1,0 +1,124 @@
+[
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "customtkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "customtkinter",
+        "description": "customtkinter",
+        "detail": "customtkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ImageTk",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "AuthToken",
+        "importPath": "auth_token",
+        "description": "auth_token",
+        "isExtraImport": true,
+        "detail": "auth_token",
+        "documentation": {}
+    },
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "autocast",
+        "importPath": "torch",
+        "description": "torch",
+        "isExtraImport": true,
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "StableDiffusionPipeline",
+        "importPath": "diffusers",
+        "description": "diffusers",
+        "isExtraImport": true,
+        "detail": "diffusers",
+        "documentation": {}
+    },
+    {
+        "label": "generate",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def generate():\n    pass\ntrigger = ctk.CTkButton(master=app,height=40, width=120, text_color=\"white\", fg_color=\"blue\", font=(\"Arial\", 20), command=generate)\ntrigger.configure(text=\"Generate\")\ntrigger.place(x=206, y=60)\napp.mainloop()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = tk.Tk()\napp.geometry(\"532x622\")\napp.title(\"Stable Bud\")\nctk.set_appearance_mode(\"dark\")\nprompt = ctk.CTkEntry(master=app, height=40, width=512, text_color=\"black\", fg_color=\"white\", font=(\"Arial\", 20))\nprompt.place(x=10, y=10)\nlmain = ctk.CTkLabel(master=app, height=512, width=512)\nlmain.place(x=10, y=110)\nmodelid = \"ComVis/stable-diffusion-v1-4\"\npipe = StableDiffusionPipeline.from_pretrained(modelid, revision=\"fp16\", torch_dtypes=torch.float16)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "prompt",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "prompt = ctk.CTkEntry(master=app, height=40, width=512, text_color=\"black\", fg_color=\"white\", font=(\"Arial\", 20))\nprompt.place(x=10, y=10)\nlmain = ctk.CTkLabel(master=app, height=512, width=512)\nlmain.place(x=10, y=110)\nmodelid = \"ComVis/stable-diffusion-v1-4\"\npipe = StableDiffusionPipeline.from_pretrained(modelid, revision=\"fp16\", torch_dtypes=torch.float16)\ndevice='cuda'\npipe.to(device)\ndef generate():\n    pass",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "lmain",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "lmain = ctk.CTkLabel(master=app, height=512, width=512)\nlmain.place(x=10, y=110)\nmodelid = \"ComVis/stable-diffusion-v1-4\"\npipe = StableDiffusionPipeline.from_pretrained(modelid, revision=\"fp16\", torch_dtypes=torch.float16)\ndevice='cuda'\npipe.to(device)\ndef generate():\n    pass\ntrigger = ctk.CTkButton(master=app,height=40, width=120, text_color=\"white\", fg_color=\"blue\", font=(\"Arial\", 20), command=generate)\ntrigger.configure(text=\"Generate\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "modelid",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "modelid = \"ComVis/stable-diffusion-v1-4\"\npipe = StableDiffusionPipeline.from_pretrained(modelid, revision=\"fp16\", torch_dtypes=torch.float16)\ndevice='cuda'\npipe.to(device)\ndef generate():\n    pass\ntrigger = ctk.CTkButton(master=app,height=40, width=120, text_color=\"white\", fg_color=\"blue\", font=(\"Arial\", 20), command=generate)\ntrigger.configure(text=\"Generate\")\ntrigger.place(x=206, y=60)\napp.mainloop()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "pipe",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "pipe = StableDiffusionPipeline.from_pretrained(modelid, revision=\"fp16\", torch_dtypes=torch.float16)\ndevice='cuda'\npipe.to(device)\ndef generate():\n    pass\ntrigger = ctk.CTkButton(master=app,height=40, width=120, text_color=\"white\", fg_color=\"blue\", font=(\"Arial\", 20), command=generate)\ntrigger.configure(text=\"Generate\")\ntrigger.place(x=206, y=60)\napp.mainloop()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "trigger",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "trigger = ctk.CTkButton(master=app,height=40, width=120, text_color=\"white\", fg_color=\"blue\", font=(\"Arial\", 20), command=generate)\ntrigger.configure(text=\"Generate\")\ntrigger.place(x=206, y=60)\napp.mainloop()",
+        "detail": "app",
+        "documentation": {}
+    }
+]
